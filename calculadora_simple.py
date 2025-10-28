@@ -18,7 +18,10 @@ def dividir(a, b):
         return "Error: división entre cero"
     else:
         return a / b
-    
+
+def potencia(a, b):
+    return a ** b
+
 def main():
     print('Calculadora simple')
     x = float(input('Introduce el primer número: '))
@@ -28,6 +31,7 @@ def main():
     print(f'Resta: {restar(x,y)}')
     print(f'Multiplicación: {multiplicar(x,y)}')
     print(f'División: {dividir(x,y)}')
+    print(f'Potencia: {potencia(x,y)}')
 
 if __name__ == '__main__':
     main()
